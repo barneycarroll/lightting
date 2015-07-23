@@ -20,9 +20,9 @@ var states = {
 		children: 'HM',
 		attrs: {
 			style: {
-				'color': 'white',
+				'color': 'black',
 				'display': 'inline',
-				'font-size': '360px'
+				'font-size': '540px'
 			}
 		}
 	},
@@ -30,9 +30,9 @@ var states = {
 		children: 'TZSCH',
 		attrs: {
 			style: {
-				'color': 'black',
+				'color': 'white',
 				'display': 'inline',
-				'font-size': '140px'
+				'font-size': '200px'
 			}
 		}
 	}
@@ -52,7 +52,7 @@ var pulse = function pulse() {
 		attrs: {
 			style: {
 				'background-color': colour(beatFraction),
-				'font-family': 'monospace',
+				'font-family': 'sans-serif',
 				'line-height': '0',
 				'position': 'fixed',
 				'text-align': 'center',
