@@ -12,6 +12,30 @@
 			lightting
 		</title>
 		<meta name="description" content="Hm tzsch hm tzsch hm tzsch hm tzsch"/>
+		<style>
+			@media ( orientation : portrait ) {
+				body::before {
+					background: black;
+					content   : '';
+					display   : block;
+					position  : fixed;
+					top       : 0;
+					left      : 0;
+					right     : 0;
+					bottom    : 0;
+				}
+
+				body::after {
+					content     : 'Landscape mode, please...';
+					color       : white;
+					display     : inline;
+					line-height : 0;
+					position    : fixed;
+					top         : 50%;
+					width       : 100%;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<script src="https://cdn.rawgit.com/joelrich/citojs/master/src/vdom.js"></script>
