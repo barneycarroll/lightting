@@ -1,4 +1,4 @@
-let beat = 60e3 / 140
+let beat = 60e3 / 180
 
 const progress = () =>
 	( new Date() % beat ) / beat
@@ -40,7 +40,6 @@ document.documentElement.replaceChild( body.dom, document.body )
 
 const pulse    = () => {
 	const beatFraction = progress()
-
 
 	cito.vdom.update( body, {
 		tag   : 'body',
